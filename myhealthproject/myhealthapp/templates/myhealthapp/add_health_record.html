@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>健康状態の入力</title>
+</head>
+<body>
+    <h1>健康状態の入力</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>
